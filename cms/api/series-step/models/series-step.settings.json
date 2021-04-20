@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "series_steps",
+  "info": {
+    "name": "Stream Step",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "delay_seconds": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "required": true
+    },
+    "template": {
+      "model": "template"
+    },
+    "stream": {
+      "via": "stream_steps",
+      "model": "stream"
+    }
+  }
+}

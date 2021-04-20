@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "streams",
+  "info": {
+    "name": "Stream",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "stream_steps": {
+      "collection": "series-step",
+      "via": "stream"
+    },
+    "sender_name": {
+      "type": "string"
+    },
+    "sender_email": {
+      "type": "email"
+    }
+  }
+}

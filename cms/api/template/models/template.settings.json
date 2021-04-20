@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "templates",
+  "info": {
+    "name": "Template",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "html_body": {
+      "type": "richtext"
+    },
+    "text_body": {
+      "type": "text"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "sender": {
+      "type": "string"
+    }
+  }
+}

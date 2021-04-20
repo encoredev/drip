@@ -1,0 +1,4 @@
+{
+    "strapi_url": "http://localhost:1337",
+    "mailgun_domain": "mg.mydomain.com"
+}
